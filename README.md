@@ -56,5 +56,26 @@ Q4:
 grep -o -E "meta [[:alpha:]]+" cyberattacks.txt | awk '{print$2}'
 ```
 
+```
+Q5:
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
