@@ -58,10 +58,14 @@ grep -o -E "meta [[:alpha:]]+" cyberattacks.txt | awk '{print$2}'
 
 ```
 Q5:
-
+cat cyberattacks.txt | grep -oP '<title>\K.*(?=</title>)'
 
 ```
 
+```
+Q6:
+cat cyberattacks.txt | grep -oP '<span class="mw-headline" id="[a-zA-Z0-9_-]*">\K.*(?=</span>)' | sed -e 's/\&amp\;/\&/g' | sed -e 's/\&quot\;/\"/g' > attack_list.txt
+```
 
 
 
